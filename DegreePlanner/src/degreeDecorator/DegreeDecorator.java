@@ -1,3 +1,7 @@
+// Degree Planner
+// DegreeDecorator.java
+// Mason Lee & Abigail Gehlbach
+
 package degreeDecorator;
 
 import java.util.ArrayList;

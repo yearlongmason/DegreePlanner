@@ -1,3 +1,7 @@
+// Degree Planner
+// SoloCourse.java
+// Mason Lee & Abigail Gehlbach
+
 package course;
 
 public class SoloCourse implements Course{
