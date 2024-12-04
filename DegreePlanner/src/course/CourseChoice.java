@@ -24,4 +24,19 @@ public class CourseChoice implements Course{
 	public void addCourse(Course newCourse) {
 		this.courseOptions.add(newCourse);
 	}
+	
+	// nicely printing all of the course options
+	private String printChoices() {
+		String courseList = "";
+		for(Course i : courseOptions) {
+			courseList += ("\t" + i + "\n");
+		}
+		return courseList;
+	}
+	
+	@Override
+	public String toString() {
+		return "CourseChoice [courseName=" + name + ", courseDescription=" + description + ", credits="
+				+ credits + "\n{" + printChoices() + "}" + "]";
+	}
 }
