@@ -20,7 +20,6 @@ public class Major implements Degree {
 	
 	@Override
 	public ArrayList<Course> getCourses() {
-		// TODO Auto-generated method stub
 		return requiredCourses;
 	}
 }
