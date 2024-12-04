@@ -13,6 +13,7 @@ public class TestDrive {
 	public static void main(String[] args) {
 		Major compSci = new Major();
 		Minor dataScience = new Minor();
+		Concentration mobileDev = new Concentration();
 		compSci.name = "Computer Science Major";
 		dataScience.name = "Data Science Minor";
 		
@@ -22,7 +23,8 @@ public class TestDrive {
 		SoloCourse designPatterns = new SoloCourse("Software Design Patterns", "This is a course covering good Object Oriented Patterns in Java.", 3);
 		SoloCourse serverSideWeb = new SoloCourse("Server Side Web Development", "This course covers PHP web development.", 3);
 		SoloCourse refactoring = new SoloCourse("Software Refactoring", "This course helps students improve code while maintaining functionality.", 3);
-
+		SoloCourse ios = new SoloCourse("iOS App Development", "This course covers swift development for iOS apps.", 3);
+		SoloCourse android = new SoloCourse("Android App Development", "This course covers java development for Android apps.", 3);
 		
 		// Creating a composite course and adding course choices.
 		CourseChoice csi3xx = new CourseChoice("CSI-3XX", "Students may choose from any two 300+ level programming course.", 6);
@@ -36,11 +38,14 @@ public class TestDrive {
 		compSci.addCourse(csi3xx);
 		dataScience.addCourse(dataViz);
 		dataScience.addCourse(introProgramming);
+		mobileDev.addCourse(ios);
+		mobileDev.addCourse(android);
 		
 		// Add degree modifiers to myDegree and print out degree requirements
 		MajorComposite myDegree = new MajorComposite();
 		myDegree.addDegreeModifier(compSci);
 		myDegree.addDegreeModifier(dataScience);
+		myDegree.addDegreeModifier(mobileDev);
 		
 		// Even though intro programming is required for the Computer Science major and Data Science minor it only shows up once!
 		System.out.println("Required courses: ");
