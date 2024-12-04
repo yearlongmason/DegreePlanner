@@ -20,7 +20,6 @@ public class Minor extends DegreeDecorator{
 
 	@Override
 	public ArrayList<Course> getCourses() {
-		// TODO Auto-generated method stub
 		return requiredCourses;
 	}
 
